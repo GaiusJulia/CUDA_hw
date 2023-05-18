@@ -52,8 +52,8 @@ int main() {
 
     //step 4
     cudaEventRecord(start);
-    int num_blocks = 16;
-    int block_size = 16;
+    int num_blocks = 64;
+    int block_size = 2;
     ArrVectMul<<<num_blocks, block_size>>>(d_A, d_x, d_res, m);
 
     cudaEventRecord(end);
