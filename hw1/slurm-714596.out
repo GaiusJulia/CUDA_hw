@@ -1,0 +1,8 @@
+=========================================
+SLURM_JOB_ID = 714596
+SLURM_JOB_NODELIST = node5-16
+SLURM_CPUS_ON_NODE = 1
+SLURM_JOB_PARTITION = titan_X
+SLURM_TASK_PID = 2971624
+==========================================
+Time elapsed: 0.069088 ms 
