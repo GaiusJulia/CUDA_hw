@@ -49,8 +49,8 @@ int main() {
 
     //step 4
     cudaEventRecord(start);
-    dim3 num_blocks(16, 8);
-    dim3 block_size(8, 8);
+    dim3 num_blocks(16, 16);
+    dim3 block_size(8, 4);
     // необходимо num_blocks.x * block_size.x = n,  num_blocks.y * block_size.y = m
     ArrSum<<<num_blocks, block_size>>>(d_A, d_B, d_res, n * m);
 
